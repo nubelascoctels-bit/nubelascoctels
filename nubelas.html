@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUBELAS COCTELS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    header {
+      background: #ff4d6d;
+      color: white;
+      padding: 20px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .btn {
+      padding: 15px 25px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+    .licor { background: #6a0dad; color: white; }
+    .sinlicor { background: #28a745; color: white; }
+    .productos {
+      display: none;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NUBELAS COCTELS</h1>
+  <p>Cocteles granizados con y sin licor</p>
+</header>
+
+<div class="container">
+  <button class="btn licor" onclick="mostrar('licor')">Cocteles con Licor</button>
+  <button class="btn sinlicor" onclick="mostrar('sinlicor')">Cocteles sin Licor</button>
+
+  <div id="licor" class="productos">
+    <h2>Cocteles con Licor</h2>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Margarita">
+      <h3>Margarita</h3>
+      <p>Refrescante con tequila y limón</p>
+      <strong>$12.000</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Piña Colada">
+      <h3>Piña Colada</h3>
+      <p>Delicioso coco con piña y ron</p>
+      <strong>$13.000</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Fresa">
+      <h3>Fresa</h3>
+      <p>Fresa con vodka suave</p>
+      <strong>$11.000</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Mango">
+      <h3>Mango</h3>
+      <p>Mango tropical con licor</p>
+      <strong>$11.500</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Blue">
+      <h3>Blue Lagoon</h3>
+      <p>Color azul con toque cítrico</p>
+      <strong>$12.500</strong>
+    </div>
+  </div>
+
+  <div id="sinlicor" class="productos">
+    <h2>Cocteles sin Licor</h2>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Fresa">
+      <h3>Fresa</h3>
+      <p>Dulce y natural para niños</p>
+      <strong>$8.000</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Mango">
+      <h3>Mango</h3>
+      <p>Refrescante sabor tropical</p>
+      <strong>$8.500</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Maracuyá">
+      <h3>Maracuyá</h3>
+      <p>Ácido y delicioso</p>
+      <strong>$8.500</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Uva">
+      <h3>Uva</h3>
+      <p>Suave y dulce</p>
+      <strong>$8.000</strong>
+    </div>
+  </div>
+</div>
+
+<script>
+  function mostrar(tipo) {
+    document.getElementById('licor').style.display = 'none';
+    document.getElementById('sinlicor').style.display = 'none';
+    document.getElementById(tipo).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
